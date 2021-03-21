@@ -1,4 +1,5 @@
 
+
 window.requestAnimFrame = function () {
   return window.requestAnimationFrame ||
   window.webkitRequestAnimationFrame ||
@@ -264,6 +265,7 @@ window.onload = function () {
   function openBox() {
     if (step === 1) {
       box.removeEventListener("click", openBox, false);
+      fullscr();
     }
     stepClass(step);
     if (step === 3) {
